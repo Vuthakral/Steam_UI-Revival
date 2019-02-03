@@ -16,3 +16,7 @@ Copypaste the code of the custom css into the Steam\skins\yourskinname\resource\
 
 #### Steam UI Settings:
 See the images in the project.
+
+
+### Disclaimer:
+I am not responsible for anything you change altering your Steam client. I am merely sharing my code for public usage at their/your own choice.
