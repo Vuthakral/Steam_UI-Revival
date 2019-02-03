@@ -8,6 +8,7 @@
   --offline: 145, 145, 145;
   --scrollbarSize: 15px;
   --scrollbarBG: 32, 32, 32;
+  --scrollbarBtn: 88, 88, 88;
   --textentry: 39, 39, 39;
   --white05: 255,255,255, 0.05;
   --white50: 255,255,255, 0.5;
@@ -312,6 +313,7 @@ background: rgb(var(--clientBG)) !important;
 .titleBarContainer.ChatTabs {
     background: rgb(var(--header_dark)) !important;
 	border: none!important;
+	padding-top: 10px !important;
 }
 .chatEntryControls{
 	background-color: rgb(var(--textentry)) !important;
@@ -359,11 +361,15 @@ background-color: rgb(var(--focus))!important;}
 	background: rgb(var(--textentry))!important;
 	min-height: 30px !important;
 }
-.chatTabList .chatTab, .ChatTabsBackButton {
+.chatTabList, .ChatTabsBackButton {
     background: rgb(var(--textentry)) !important; /*rgba(var(--white05))*/
     margin-right: 1px!important;
 	border: 0!important;
 	/*border-bottom: 1px solid #0072c6 !important;*/
+}
+
+.chatTab {
+	background: linear-gradient(rgb(75, 75, 75), rgb(32,32,32)) !important;
 }
 
 .chatEntry {
@@ -641,7 +647,7 @@ color: rgb(140,140,140)!important;
 
 .chatWindow ::-webkit-scrollbar,
 .friendlist ::-webkit-scrollbar{
-	background: rgb(var(--scrollbarCol)) !important;
+	background: linear-gradient(rgb(75, 75 75), rgb(32, 32, 32))!important;
 	width: var(--scrollbarSize) !important;
 }
 /* scroll bar button */ 
@@ -649,7 +655,7 @@ color: rgb(140,140,140)!important;
     height: 16px!important; 
     border-radius: 0px!important; 
     color: (var(--scrollbarCol)) !important; 
-    border: 0px solid transparent!important;
+    border: 2px solid transparent!important;
 }
 /* disables scroll buttons at settings */
 .DialogBody::-webkit-scrollbar-button {
@@ -662,20 +668,22 @@ color: rgb(140,140,140)!important;
 /* arrow buttons at scroll bar */
 /* Down */
 ::-webkit-scrollbar-button:vertical:increment {
-    background-image: url(https://i.imgur.com/MSeJirr.png)!important;
+    background-image: url("https://i.imgur.com/9T9rV6q.png") !important;
     background-repeat: no-repeat!important;
     background-position: 0px 0px!important;
+	background-color: rgb(var(--scrollbarBtn)) !important;
 }
 /* Up */
 ::-webkit-scrollbar-button:vertical:decrement { 
-    background-image: url(https://i.imgur.com/U6H0Z62.png)!important;
+    background-image: url("https://i.imgur.com/QM79gsk.png") !important;
     background-repeat: no-repeat!important;
     background-position: 0px 0px!important;
+	background-color: rgb(var(--scrollbarBtn)) !important;
 }
 /* background behind scrollbar */
 ::-webkit-scrollbar-track {
 	color: rgba(255,255,255,0);
-    background-color:rgba(255,255,255,0) !important;
+    background:	linear-gradient(rgb(54, 54, 54), rgb(32, 32, 32), rgb(22, 22, 22)) !important;
 }
 /* hovering for the scrollbar itself */
 ::-webkit-scrollbar-thumb:hover {
@@ -898,8 +906,8 @@ fill: rgb(113,113,113)!important;}
   background: rgb(var(--clientbg)) !important;
   color: #8c8c8c !important;
   padding: 18px 10px 4px 12px !important;
-  font-weight: 300!important;
-  text-transform: uppercase!important;
+  font-weight: normal !important;
+  transition-duration: 0s !important;
  }
 
 .chatTab .chatTabHighlight {
@@ -1079,10 +1087,13 @@ background: rgb(var(--focus)) !important;}
 
 /*URLs*/
 .msg a {
-color: rgb(var(--white75))!important;
-text-decoration: underline !important;
-border-bottom: none!important;
-white-space: initial!important;}
+	color: rgb(var(--white75))!important;
+	text-decoration: underline !important;
+	border-bottom: none!important;
+	white-space: initial!important;
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
 
 .msg .OpenGraphMessageURL, .OpenGraphMessageURL_full{
 color: rgb(var(--white75))!important;}
@@ -1138,15 +1149,27 @@ background:rgb(53,53,53)!important;
 	  color: rgba(var(--white50))!important;}
 
 .SingleUserChat .msg{
-margin-right: 4px!important;
+	margin-right: 4px!important;
 }
 
 .SingleUserChat .msgText{
+position: relative !important;
 margin-right: 6px!important;
-  margin-left: 8px!important; }
+  margin-left: 8px!important;
+	padding-top: 0px !important;
+	padding-bottom: 2px !important;  
+}
   
 .MultiUserChat .isCurrentUser .msgText {
-color: rgb(var(--offline))!important;}
+color: rgb(var(--offline))!important;
+	padding-top: 0px !important;
+	padding-left: 0px !important;
+}
+
+.MultiUserChat {
+	border-left: 5px solid rgb(var(--textentry)) !important;
+	border-right: 5px solid rgb(var(--textentry)) !important;
+}
 	  
 .FriendMessageCount{
 z-index: 99 !important;}
@@ -1216,7 +1239,10 @@ color: #8d8d8d!important;}
 padding-left: 10px!important;}
 
 .MultiUserChat .msg {
-padding: 1.2px 0!important;}
+padding: 1.2px 0!important;
+border-left: 1px solid rgb(var(--BorderMidGrey)) !important;
+margin-bottom: 5px !important;
+}
 
 .ChatRoomSpeaker {
 padding-top: 0px!important;
