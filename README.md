@@ -13,3 +13,6 @@ Please note this css code is originally based upon the "[Metro skin for new Stea
 
 #### Linux & Overpriced Tin:
 Copypaste the code of the custom css into the Steam\skins\yourskinname\resource\webkit.css file
+
+#### Steam UI Settings:
+See the images in the project.
