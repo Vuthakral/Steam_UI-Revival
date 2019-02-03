@@ -1,4 +1,4 @@
-# Steam_UI-Revival
+## Steam UI Revival
 A modification of the Steam UI's css code to create a visual mimicry of the old Steam UI, while keeping most features of the new UI.
 
 Please note this css code is originally based upon the "[Metro skin for new Steam chat and friends UI](https://github.com/RoseTheFlower/newsteamchat)" by RoseTheFlower
