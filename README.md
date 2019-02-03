@@ -11,7 +11,7 @@ Please note this css code is originally based upon the "[Metro skin for new Stea
 - **3)** Place the downloaded css file into the steam\clientui\ folder
 - **4)** Close your Steam chat & Friends list windows, then right click your task tray icon for Steam to re-open them.
 
-#### Linux & Overpriced Tin:
+#### Linux & Overpriced Aluminum:
 Copypaste the code of the custom css into the Steam\skins\yourskinname\resource\webkit.css file
 
 #### Steam UI Settings:
