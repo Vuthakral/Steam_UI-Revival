@@ -8,7 +8,7 @@ Please note this css code is originally based upon the "[Metro skin for new Stea
 - You do **NOT** need the "source_assets" folder for this to function. I merely uploaded them in case people wish to fork this UI as a starting point for their own. You *only* need the custom css file.
 
 #### Windows:
-- **1)** Download & run the **[patcher](https://github.com/PhantomGamers/EnableNewSteamFriendsSkin)** to enable the use of custom friends/chat skins.
+- **1)** Download & run the **[patcher](https://github.com/PhantomGamers/SteamFriendsPatcher/)** to enable the use of custom friends/chat skins.
 - **2)** Download the css file from this github project
 - **3)** Place the downloaded css file into the steam\clientui\ folder
 - **4)** Close your Steam chat & Friends list windows, then right click your task tray icon for Steam to re-open them.
